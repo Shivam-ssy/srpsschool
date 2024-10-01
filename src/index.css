@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+        font-family: "Poppins", sans-serif !important;
+        font-optical-sizing: auto;
+        
+      
+}
+.w-inherit{
+        width: inherit;
+}
+.h-inherit{
+        height: inherit;
+}
