@@ -1,7 +1,7 @@
 
 function ClassesCards({mainImg="",title="",details="",subimage="",name="",price=""}) {
   return (
-    <div className="rounded-xl h-[500px] group w-96 relative overflow-hidden ">
+    <div className="rounded-xl h-[500px] group w-80 md:w-96 relative overflow-hidden ">
       <div>
         <img className="w-96 h-60" src={mainImg} alt="" />
       </div>

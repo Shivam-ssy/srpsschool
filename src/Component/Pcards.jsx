@@ -1,6 +1,6 @@
 function Pcards({title="",image="" ,bg="bg-white", details="",className=""}) {
   return (
-    <main className={`flex flex-col cursor-pointer ${bg} justify-center rounded-2xl p-5 max-w-96  `}>
+    <main className={`flex flex-col cursor-pointer ${bg} justify-center rounded-2xl p-5 w-80 md:w-96  `}>
     <div className=' px-5  mb-5  rounded-2xl'><img className=' rounded-2xl w-full' src={image} alt="" /></div>
     <h2 className='font-bold text-2xl'>{title}</h2>
     <div className=' '>{details}</div>

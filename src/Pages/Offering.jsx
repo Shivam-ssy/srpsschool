@@ -41,7 +41,7 @@ function Offering() {
             quidem dolorem necessitatibus praesentium id? Reprehenderit, soluta
             aut consequuntur ut autem adipisci dolores. Molestias?
           </span>
-          <div className="text-white flex w-fit -ml-5 px-0 md:px-10 py-2 gap-5 rounded-3xl mt-10 bg-secondary ">
+          <div className="text-white flex w-fit -ml-5 px-0 md:px-10 py-2 gap-2 md:gap-5 rounded-3xl mt-10 bg-secondary ">
             <div className="border flex md:gap-2 md:px-3 border-gray-600 border-l-0 border-t-0 border-b-0">
               <h3 className="font-bold place-content-center h-full md:text-2xl">
                 14+
@@ -51,14 +51,14 @@ function Offering() {
                 exprience
               </span>
             </div>
-            <div className="border flex gap-2 md:px-3  border-gray-600 border-l-0 border-t-0 border-b-0">
+            <div className="border flex md:gap-2 md:px-3  border-gray-600 border-l-0 border-t-0 border-b-0">
               <h3 className="font-bold place-content-center md:text-2xl">7k+</h3>
               <span>
                 Students
                 <br /> each year
               </span>
             </div>
-            <div className=" flex gap-2 md:px-3 border-gray-600 ">
+            <div className=" flex md:gap-2 md:px-3 border-gray-600 ">
               <h3 className="font-bold place-content-center md:text-2xl">15+</h3>
               <span>
                 Award

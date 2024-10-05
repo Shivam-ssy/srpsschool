@@ -9,26 +9,26 @@ function Contact() {
         <AboutCard title='14/A,Kilix Home Tower, NYC' details='location' img='./map-pin-line.svg' style='bg-secondary' />
         <AboutCard title='support@kindelo.com' details='Email' img='./mail-line.svg' style='bg-secondary' />
       </div>
-      <div className='w-full flex flex-wrap gap-5 md:gap-0 justify-evenly items-center'>
-        <div className=' md:w-auto'>
+      <div className='w-full  flex flex-wrap gap-5 md:gap-0 justify-evenly items-center'>
+        <div className=' md:w-auto w-80'>
             <h3 className='text-2xl font-bold'>Contact Us Right Here</h3>
             <div className=' border border-gray-600 md:p-10 p-5 mt-10 rounded-2xl'>
-                <div className='flex gap-5'>
-                    <div className='flex flex-col w-40 md:w-52'>
+                <div className='flex flex-col md:flex-row w-full gap-5'>
+                    <div className='flex flex-col w-full md:w-52'>
                         <label htmlFor="name">Name</label>
                         <input className='outline-none border h-10 rounded-xl border-gray-600' type="text" name="name" id="name" />
                     </div>
-                    <div className='flex flex-col w-40 md:w-52'>
+                    <div className='flex flex-col w-full md:w-52'>
                         <label htmlFor="email">Email</label>
                         <input className='outline-none border h-10 rounded-xl border-gray-600' type="email" name="email" id="email" />
                     </div>
                 </div>
-                <div className='flex gap-5'>
-                    <div className='flex flex-col  w-40 md:w-52'>
+                <div className='flex flex-col md:flex-row w-full gap-5'>
+                    <div className='flex flex-col  w-full md:w-52'>
                         <label htmlFor="phone">Phone</label>
                         <input className='outline-none border h-10 rounded-xl border-gray-600' type="tel" name="phone" id="phone" />
                     </div>
-                    <div className='flex flex-col  w-40 md:w-52'>
+                    <div className='flex flex-col  w-full md:w-52'>
                         <label htmlFor="sub">Subjects</label>
                         <select className='outline-none border h-10 rounded-xl border-gray-600' name="sub" id="sub">
                             <option value="">Select any Option </option>
