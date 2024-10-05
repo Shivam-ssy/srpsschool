@@ -1,12 +1,17 @@
-import TimeBlock from "../Component/TimeBlock"
-
+import DynamicTable from "../Component/DynamicTable"
+import Header from "../Component/Header"
+import { schedule } from "../Data/TableSchedule"
 function TimeTable() {
   return (
-    <main className="w-full  flex flex-col items-center">
+    <main>
+      <Header title="Time Table" page="Time Table"/> 
+    <div className="w-full  flex flex-col py-10 items-center">
+      
       <h2 className="font-bold text-4xl">All Classes Time Table</h2>
       <span className="max-w-xl text-center">Lorem ipsum dolor sit amet consectetur  optio unde. Id cupiditate numquam officiis nulla veniam unde repudiandae consequuntur sapiente enim?</span>
-      <div>
-        <table>
+      <div className="mt-10 w-full overflow-x-auto no-scrollbar flex justify-center">
+        <DynamicTable schedule={schedule}/>
+        {/* <table>
           <thead>
             <tr>
               <th>Sunday</th>
@@ -15,151 +20,139 @@ function TimeTable() {
               <th>Wednesday</th>
               <th>Thursday</th>
               <th>Friday</th>
-              <th>Satrurday</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>
-                <TimeTable/>
+                <TimeBlock color="bg-primary"/>
               </td>
               <td>
-                <TimeTable/>
+                <TimeBlock color="bg-secondary"/>
               </td>
               <td>
-                <TimeTable/>
+                <TimeBlock color="bg-periwinkleblue"/>
               </td>
               <td>
-                <TimeTable/>
+                <TimeBlock color="bg-primary"/>
               </td>
               <td>
-                <TimeTable/>
+                <TimeBlock color="bg-skyblue"/>
               </td>
               <td>
-                <TimeTable/>
+                <TimeBlock color="bg-coralpink"/>
+              </td>
+              
+            </tr>
+            <tr>
+             
+              <td>
+                <TimeBlock color="bg-periwinkleblue"/>
               </td>
               <td>
-                <TimeTable/>
+                <TimeBlock color="bg-skyblue"/>
+              </td>
+              <td>
+                <TimeBlock color="bg-coralpink"/>
+              </td>
+              <td>
+                <TimeBlock color="bg-secondary"/>
+              </td>
+              <td>
+                <TimeBlock color="bg-salmonpink"/>
+              </td>
+              <td>
+                <TimeBlock color="bg-periwinkleblue"/>
               </td>
             </tr>
             <tr>
+             
               <td>
-                <TimeTable/>
+                <TimeBlock color="bg-secondary"/>
               </td>
               <td>
-                <TimeTable/>
+                <TimeBlock color="bg-primary"/>
               </td>
               <td>
-                <TimeTable/>
+                <TimeBlock color="bg-salmonpink"/>
               </td>
               <td>
-                <TimeTable/>
+                <TimeBlock color="bg-periwinkleblue"/>
               </td>
               <td>
-                <TimeTable/>
+                <TimeBlock color="bg-secondary"/>
               </td>
               <td>
-                <TimeTable/>
-              </td>
-              <td>
-                <TimeTable/>
+                <TimeBlock color="bg-skyblue"/>
               </td>
             </tr>
             <tr>
+             
               <td>
-                <TimeTable/>
+                <TimeBlock color="bg-coralpink"/>
               </td>
               <td>
-                <TimeTable/>
+                <TimeBlock color="bg-secondary"/>
               </td>
               <td>
-                <TimeTable/>
+                <TimeBlock color="bg-periwinkleblue"/>
               </td>
               <td>
-                <TimeTable/>
+                <TimeBlock color="bg-secondary"/>
               </td>
               <td>
-                <TimeTable/>
+                <TimeBlock color="bg-primary"/>
               </td>
               <td>
-                <TimeTable/>
-              </td>
-              <td>
-                <TimeTable/>
+                <TimeBlock color="bg-salmonpink"/>
               </td>
             </tr>
             <tr>
+              
               <td>
-                <TimeTable/>
+                <TimeBlock color="bg-primary"/>
               </td>
               <td>
-                <TimeTable/>
+                <TimeBlock color="bg-periwinkleblue"/>
               </td>
               <td>
-                <TimeTable/>
+                <TimeBlock color="bg-primary"/>
               </td>
               <td>
-                <TimeTable/>
+                <TimeBlock color="bg-salmonpink"/>
               </td>
               <td>
-                <TimeTable/>
+                <TimeBlock color="bg-coralpink"/>
               </td>
               <td>
-                <TimeTable/>
-              </td>
-              <td>
-                <TimeTable/>
+                <TimeBlock color="bg-skyblue"/>
               </td>
             </tr>
             <tr>
+             
               <td>
-                <TimeTable/>
+                <TimeBlock color="bg-secondary"/>
               </td>
               <td>
-                <TimeTable/>
+                <TimeBlock color="bg-skyblue"/>
               </td>
               <td>
-                <TimeTable/>
+                <TimeBlock color="bg-salmonpink"/>
               </td>
               <td>
-                <TimeTable/>
+                <TimeBlock color="bg-skyblue"/>
               </td>
               <td>
-                <TimeTable/>
+                <TimeBlock color="bg-secondary"/>
               </td>
               <td>
-                <TimeTable/>
-              </td>
-              <td>
-                <TimeTable/>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <TimeTable/>
-              </td>
-              <td>
-                <TimeTable/>
-              </td>
-              <td>
-                <TimeTable/>
-              </td>
-              <td>
-                <TimeTable/>
-              </td>
-              <td>
-                <TimeTable/>
-              </td>
-              <td>
-                <TimeTable/>
-              </td>
-              <td>
-                <TimeTable/>
+                <TimeBlock color="bg-primary"/>
               </td>
             </tr>
           </tbody>
-        </table>
+        </table> */}
       </div>
+    </div>
     </main>
   )
 }

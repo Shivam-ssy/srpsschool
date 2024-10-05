@@ -13,6 +13,9 @@ import Faqs from './Pages/Faqs.jsx'
 import Gallery from './Pages/Gallery.jsx'
 import Contact from './Pages/Contact.jsx'
 import TimeTable from './Pages/TimeTable.jsx'
+import Testimonials from './Pages/Testimonials.jsx'
+import TeacherDetails from './Pages/TeacherDetails.jsx'
+import News from './Pages/News.jsx'
 const router=createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App/>}>
@@ -23,7 +26,10 @@ const router=createBrowserRouter(
       <Route  path='/pages/faqs' element={<Faqs/>}/>
       <Route  path='/pages/gallery' element={<Gallery/>}/>
       <Route  path='/pages/timetable' element={<TimeTable/>}/>
+      <Route  path='/pages/testimonials' element={<Testimonials/>}/>
+      <Route  path='/pages/teachersdetails' element={<TeacherDetails/>}/>
       <Route  path='/contact' element={<Contact/>}/>
+      <Route  path='/news' element={<News/>}/>
       <Route  path='*' element={<NotFound/>}/>
       
     </Route>

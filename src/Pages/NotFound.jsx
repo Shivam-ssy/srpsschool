@@ -4,7 +4,7 @@ function NotFound() {
   return (
     <main>
     <Header title="404 Not Found" page="Not Found"/>
-    <div className="flex justify-evenly mt-32">
+    <div className="flex flex-wrap justify-evenly m-0 px-5 gap-5 md:gap-0 md:mt-16">
         <div className=" max-w-xl">
             <h3 className="font-bold text-3xl uppercase mb-10">Opps! page not <br /> not found</h3>
             <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus saepe enim alias quasi unde, cumque sint ut voluptatum molestias sequi dolore doloremque quibusdam soluta ipsa, architecto vitae natus iure. Sequi!</span>

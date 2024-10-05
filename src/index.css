@@ -3,15 +3,37 @@
 @tailwind utilities;
 
 
-body{
+body {
         font-family: "Poppins", sans-serif !important;
         font-optical-sizing: auto;
-        
-      
+
+
 }
-.w-inherit{
+
+.w-inherit {
         width: inherit;
 }
-.h-inherit{
+
+.h-inherit {
         height: inherit;
 }
+
+.no-scrollbar::-webkit-scrollbar {
+        display: none;
+}
+
+.no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+}
+progress {
+        background-color: #fff8eb;
+        color: #ff9b24;
+        
+    }
+    progress::-webkit-progress-value {
+        background-color: #ff9b24;
+    }
+    progress::-moz-progress-bar {
+        background-color: #ff9b24;
+    }

@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
   return (
     <main className="w-full">
-      <div className=" w-full mt-10 flex flex-wrap justify-evenly items-start px-32 py-20 bg-[#f7a138]/10">
+      <div className=" w-full mt-10 flex flex-wrap justify-evenly items-start px-10 md:px-32 py-20 bg-[#f7a138]/10">
         {/* <div className='w-3/4 absolute  h-96 left-1/2 top-1/2 -translate-x-1/2 '>
       <img className='w-full absolute rounded-3xl h-full' src="./giraff.jpg" alt="" />
       <div className='w-full absolute rounded-3xl flex flex-col gap-5 items-center justify-center h-full opacity-90 bg-[#0fc0b3] text-white'>
@@ -15,7 +15,7 @@ function Footer() {
         </div>
       </div>
       </div> */}
-        <div className="w-96 ">
+        <div className="md:w-96  w-full  md:px-0">
           <div className="flex items-center mb-5  text-secondary gap-3 font-serif">
             <img className="h-20" src="./logo.png" alt="" />
             <div>
@@ -23,7 +23,7 @@ function Footer() {
               <span>Best School</span>
             </div>
           </div>
-          <span className="max-w-96">
+          <span className="w-full md:px-0 md:max-w-96">
             Lorem ipsum dolor sit amet consectetur, Officiis est cumque sunt
             magni? Magni id aliquam tenetur sequi enim ratione ab quibusdam.
             Facere, similique voluptatem
@@ -32,7 +32,7 @@ function Footer() {
             Join Now
           </div>
         </div>
-        <div>
+        <div className="mt-10 md:mt-0">
           <h3 className="font-bold text-2xl mb-5">Quick Links</h3>
           <ul>
             <li>About</li>
@@ -44,7 +44,7 @@ function Footer() {
         </div>
 
         <div>
-          <h3 className="font-bold text-2xl mb-5">Programs</h3>
+          <h3 className="font-bold text-2xl mb-5 mt-10 md:mt-0">Programs</h3>
           <ul>
             <li>Play School </li>
             <li>Nursery</li>
@@ -56,7 +56,7 @@ function Footer() {
           </ul>
         </div>
         <div>
-          <h3 className="font-bold text-2xl mb-5">Contact Us</h3>
+          <h3 className="font-bold text-2xl mb-5 mt-10 md:mt-0">Contact Us</h3>
           <ul>
             <li>
               <i className="ri-map-pin-2-fill text-secondary"></i> 14/A,Kilix
@@ -73,7 +73,7 @@ function Footer() {
         </div>
       </div>
       <div className="w-full relative h-40 mb-10 flex items-end justify-evenly">
-       <img className="h-32 w-full absolute" src="./sinewave.svg" alt="" />
+       <img className="h-32 w-full absolute" src="/sinewave.svg" alt="" />
        <div className=" ">Copyright by &copy; 2024 Madrocket</div>
        <div className="flex gap-3">
        <i className="text-secondary text-2xl ri-facebook-circle-fill"></i>
