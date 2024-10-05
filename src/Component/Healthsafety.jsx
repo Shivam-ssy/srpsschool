@@ -1,7 +1,7 @@
 
 function Healthsafety({mainImg,subimg1,subimg2,subtitle1, subtitle2}) {  
   return (
-    <div className="flex justify-evenly w-full my-20">
+    <div className="flex flex-wrap px-5 md:px-0 justify-evenly w-full my-20">
     <div className="flex flex-col">
       <h3 className="font-bold text-3xl">
         Health and Safety

@@ -7,11 +7,11 @@ function Faqs() {
   return (
     <main>
       <Header title="Faqs" page="faqs"/>
-      <div className='flex justify-center items-center flex-col gap-4'>
+      <div className='flex justify-center px-5 md:px-0 items-center flex-col gap-4'>
         <h2 className='font-bold text-6xl'>Freequently Asked Questions</h2>
         <span className='text-center'>View classe by age, program or subject. Check out upcoming camps and <br />special events too.</span>
       </div>
-      <div className='flex justify-center gap-20 mt-20'>
+      <div className='flex flex-wrap px-5 md:px-0 justify-center gap-20 mt-20'>
         <div>
         <FaqsCard title='What is the best Age to to start kinderGarten?' details='Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
               debitis natus illum ut inventore impedit sapiente molestias a'/>

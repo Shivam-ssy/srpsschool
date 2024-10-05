@@ -2,7 +2,7 @@ import { NavLink,Link, useLocation } from "react-router-dom"
 import { useState,useEffect } from "react";
 function NavBar(){
     const [isScrolled, setIsScrolled] = useState(false);
-    const [isOpen,setIsOpen]=useState(false)
+    const [isOpen,setIsOpen]=useState(true)
     const location=useLocation()
     console.log(location.pathname);
     

@@ -6,7 +6,7 @@ function Program() {
   return (
     <main>
         <Header title="Our Programs" page="Programs"/>
-        <div className='w-full px-32 flex gap-10 flex-wrap'>
+        <div className='w-full px-32 justify-center flex gap-10 flex-wrap'>
         <Pcards
             image="../settling.jpg"
             title="Settling"

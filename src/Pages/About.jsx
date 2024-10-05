@@ -5,7 +5,7 @@ function About() {
   return (
     <main>
       <Header title="About" page="About" />
-      <div className="flex justify-evenly">
+      <div className="flex flex-col md:flex-row px-5 md:px-0 mb-10 md:mb-0  md:justify-evenly">
         <img src="./aboutbest.png" alt="" />
         <div className="max-w-xl">
           <h2 className="font-bold text-4xl mb-5">Best For Your Kids</h2>
@@ -55,7 +55,7 @@ function About() {
           consectetur eos nemo esse laborum rem nobis placeat delectus vel.
           Nulla nesciunt, cupiditate
         </span>
-        <div className="flex mt-10">
+        <div className="flex flex-wrap justify-center gap-5 md:gap-0 mt-10">
           <AboutCard
             title="Learning & Fun"
             img="./book-shelf-line.svg"
@@ -84,7 +84,7 @@ function About() {
 
       {/* friendly atmosphere */}
 
-      <div className="flex justify-evenly my-20">
+      <div className="flex flex-wrap px-5 md:px-0 justify-evenly my-20">
         <div className="flex flex-col">
           <h3 className="font-bold text-3xl">
             Friendly Atmophere <br />

@@ -11,7 +11,7 @@ function NotFound() {
            <Link to="/"> <div className="px-5 flex items-center mt-10 gap-3 py-3 w-fit bg-primary rounded-3xl"><i className="ri-home-2-line"></i>Back to Home</div></Link>
 
         </div>
-      <img className="h-96 rounded-full" src="./notfound.png" alt="" />
+      <img className="h-96 rounded-full" src="/notfound.png" alt="" />
     </div>
     </main>
   )

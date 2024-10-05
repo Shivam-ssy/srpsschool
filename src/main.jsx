@@ -16,6 +16,7 @@ import TimeTable from './Pages/TimeTable.jsx'
 import Testimonials from './Pages/Testimonials.jsx'
 import TeacherDetails from './Pages/TeacherDetails.jsx'
 import News from './Pages/News.jsx'
+import Classes from './Pages/Classes.jsx'
 const router=createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App/>}>
@@ -29,6 +30,7 @@ const router=createBrowserRouter(
       <Route  path='/pages/testimonials' element={<Testimonials/>}/>
       <Route  path='/pages/teachersdetails' element={<TeacherDetails/>}/>
       <Route  path='/contact' element={<Contact/>}/>
+      <Route  path='/classes' element={<Classes/>}/>
       <Route  path='/news' element={<News/>}/>
       <Route  path='*' element={<NotFound/>}/>
       
