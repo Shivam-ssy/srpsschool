@@ -80,7 +80,7 @@ function Footer() {
        <i className="text-secondary text-2xl ri-twitter-fill"></i>
        <i className="text-secondary text-2xl ri-youtube-fill"></i>
        </div>
-       <div>Design with ❤️ by Madrocket</div>
+       <div>Design with ❤️ by Shivam Singh Yadav</div>
       </div>
     </main>
   );
