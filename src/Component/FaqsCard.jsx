@@ -2,7 +2,7 @@ import React from 'react'
 
 function FaqsCard({title="",details=""}) {
   return (
-    <details className="group w-96 pb-2 mb-5 border rounded-xl  border-gray-600">
+    <details className="group w-80 md:w-96 pb-2 mb-5 border rounded-xl  border-gray-600">
     <summary className="uppercase  rounded-xl group-open:text-white py-2 mb-2 px-5  group-open:bg-primary flex justify-between items-center cursor-pointer font-bold">
       <span>{title}</span>
       <span className=" group-open:hidden">

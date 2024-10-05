@@ -41,7 +41,7 @@ function Offering() {
             quidem dolorem necessitatibus praesentium id? Reprehenderit, soluta
             aut consequuntur ut autem adipisci dolores. Molestias?
           </span>
-          <div className="text-white flex w-fit px-0 md:px-10 py-2 gap-5 rounded-3xl mt-10 bg-secondary ">
+          <div className="text-white flex w-fit -ml-5 px-0 md:px-10 py-2 gap-5 rounded-3xl mt-10 bg-secondary ">
             <div className="border flex md:gap-2 md:px-3 border-gray-600 border-l-0 border-t-0 border-b-0">
               <h3 className="font-bold place-content-center h-full md:text-2xl">
                 14+
@@ -67,7 +67,7 @@ function Offering() {
             </div>
           </div>
           {/* list for  best kidd */}
-          <ul className=" list-none my-5">
+          <ul className=" list-none mt-5">
             <li>
               <i className="ri-arrow-right-s-line text-xl bg-secondary/20 rounded-full text-secondary"></i>{" "}
               We Belive every child is intellegent so we care
@@ -80,7 +80,7 @@ function Offering() {
         </div>
       </div>
       {/* our programs */}
-      <div className="w-full flex flex-col items-center bg-[#fdf7ed] ">
+      <div className="w-full flex py-10 flex-col items-center bg-[#fdf7ed] ">
         <h3 className="font-bold text-3xl">Our Programs</h3>
         <span className="md:max-w-[40rem] md:px-0 px-5 text-center w-full my-5">
           Lorem ipsum dolor sit amet, assumenda dolores consequuntur nam nihil
