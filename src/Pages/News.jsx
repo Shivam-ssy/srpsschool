@@ -46,7 +46,7 @@ function News() {
         <option value="Entertainment">Entertainment</option>
       </select>
 
-      <div>
+      {/* <div>
         {currentNews.map(news => (
           <div key={news.id} className="news-card">
             <h2>{news.title}</h2>
@@ -54,7 +54,7 @@ function News() {
             <span>{news.category}</span>
           </div>
         ))}
-      </div>
+      </div> */}
 
       {/* Pagination */}
       <div className="pagination">
