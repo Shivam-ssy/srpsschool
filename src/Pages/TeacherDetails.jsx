@@ -6,7 +6,7 @@ function TeacherDetails() {
   return (
     <main>
       <Header page="Teacher Details" title="Teacher Deatils" />
-      <div className="flex items-center flex-col px-10">
+      <div className="flex items-center mt-10 md:mt-0 flex-col px-10">
         <div className="grid md:grid-cols-2  gap-5 grid-cols-1 w-full md:w-3/4">
           <img className="md:max-w-lg w-full rounded-3xl" src="../p1.jpg" alt="" />
           <div className="bg-primary/10 py-10 px-5 rounded-3xl w-full ">

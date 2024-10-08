@@ -17,12 +17,14 @@ import Testimonials from './Pages/Testimonials.jsx'
 import TeacherDetails from './Pages/TeacherDetails.jsx'
 import News from './Pages/News.jsx'
 import Classes from './Pages/Classes.jsx'
+import ProgramDetials from './Pages/ProgramDetials.jsx'
 const router=createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App/>}>
       <Route index path='/' element={<Home/>}/>
       <Route  path='/about' element={<About/>}/>
-      <Route  path='program/programs' element={<Program/>}/>
+      <Route  path='/program' element={<Program/>}/>
+      <Route  path='/program/:id' element={<ProgramDetials/>}/>
       <Route  path='/pages/teacher' element={<Teachers/>}/>
       <Route  path='/pages/faqs' element={<Faqs/>}/>
       <Route  path='/pages/gallery' element={<Gallery/>}/>
