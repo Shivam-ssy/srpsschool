@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import AboutCard from '../Component/AboutCard'
+import ShowContext from '../context/ShowContext'
 
 function Contact() {
+    const {siteData}=useContext(ShowContext);
   return (
     <main>
       <div className='flex gap-5 flex-col md:flex-row px-5 md:px-0 w-full justify-center'>
-        <AboutCard title='907-200-3567' details='Phone'img='./phone-line.svg' style='bg-secondary' />
-        <AboutCard title='14/A,Kilix Home Tower, NYC' details='location' img='./map-pin-line.svg' style='bg-secondary' />
-        <AboutCard title='support@kindelo.com' details='Email' img='./mail-line.svg' style='bg-secondary' />
+        <AboutCard title={siteData?.ContactUs.phone_number} details='Phone'img='./phone-line.svg' style='bg-secondary' />
+        <AboutCard title={siteData?.ContactUs.location} details='location' img='./map-pin-line.svg' style='bg-secondary' />
+        <AboutCard title={siteData?.ContactUs.email} details='Email' img='./mail-line.svg' style='bg-secondary' />
       </div>
       <div className='w-full  flex flex-wrap gap-5 md:gap-0 justify-evenly items-center'>
         <div className=' md:w-auto w-80'>

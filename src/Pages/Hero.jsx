@@ -7,7 +7,7 @@ function Hero() {
         <h3 className='md:text-7xl text-6xl  font-bold'>Best Children's <br /> Education</h3>
         <div className='text-white bg-primary px-5 py-3 rounded-3xl w-fit mt-10'>Admission Open 2022-2023</div>
       </div>
-      <div><img className='md:h-[80vh]' src="./heroImg2.png" alt="" /></div>
+      <div><img className='md:h-[80vh] max-w-xl' src="./heroImg2.png" alt="" /></div>
     </main>
   )
 }

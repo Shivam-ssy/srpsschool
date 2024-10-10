@@ -1,11 +1,13 @@
 import { NavLink, Link, useLocation } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import ShowContext from "../context/ShowContext";
 
 function NavBar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false); // Initially set to false for mobile menu
   const location = useLocation();
-  console.log(location.pathname);
+  const {siteData}=useContext(ShowContext);
+  // console.log(location.pathname);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,14 +35,14 @@ function NavBar() {
         <div className="w-full hidden h-5 md:flex justify-between px-10">
           <div className="flex gap-5">
             <div className="flex gap-1">
-              <i className="ri-time-fill text-primary"></i> 8.00am-4.00pm
+              <i className="ri-time-fill text-primary"></i> {siteData?.ContactUs.opening_hours}
             </div>
             <div className="flex gap-1">
-              <i className="ri-mail-fill text-primary"></i> support@kindelo.com
+              <i className="ri-mail-fill text-primary"></i> {siteData?.ContactUs.email}
             </div>
           </div>
           <div className="flex gap-1 ">
-            <i className="ri-map-pin-2-fill text-primary"></i> 14/A,Kilix Home Tower, NYC
+            <i className="ri-map-pin-2-fill text-primary"></i> {siteData?.ContactUs.location}
           </div>
         </div>
         <nav className="flex justify-between items-center md:justify-around mt-5">
@@ -148,7 +150,7 @@ function NavBar() {
           </div>
           <div className="md:flex hidden gap-5 items-center">
             <div className="flex items-center gap-2">
-              <i className="ri-phone-line text-2xl "></i> 907-200-3462
+              <i className="ri-phone-line text-2xl "></i> {siteData?.ContactUs.phone_number}
             </div>
             <div className="px-5 py-3 bg-primary rounded-3xl">Apply Now</div>
             <div>

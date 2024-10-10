@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
+import ShowContext from "../context/ShowContext";
 
 function Footer() {
+  const {siteData}=useContext(ShowContext);
   return (
     <main className="w-full">
       <div className=" w-full mt-10 flex flex-wrap justify-evenly items-start px-10 md:px-32 py-20 bg-[#f7a138]/10">
@@ -24,9 +26,7 @@ function Footer() {
             </div>
           </div>
           <span className="w-full md:px-0 md:max-w-96">
-            Lorem ipsum dolor sit amet consectetur, Officiis est cumque sunt
-            magni? Magni id aliquam tenetur sequi enim ratione ab quibusdam.
-            Facere, similique voluptatem
+          {siteData?.AboutUs.vision}
           </span>
           <div className="w-fit px-5 py-2 rounded-3xl cursor-pointer mt-10 bg-primary">
             Join Now
@@ -59,26 +59,25 @@ function Footer() {
           <h3 className="font-bold text-2xl mb-5 mt-10 md:mt-0">Contact Us</h3>
           <ul>
             <li>
-              <i className="ri-map-pin-2-fill text-secondary"></i> 14/A,Kilix
-              Home Tower, NYC
+              <i className="ri-map-pin-2-fill text-secondary"></i> {siteData?.ContactUs.location}
             </li>
             <li>
-              <i className="ri-phone-line  text-secondary"></i> 907-200-3462
+              <i className="ri-phone-line  text-secondary"></i> {siteData?.ContactUs.phone_number}
             </li>
             <li>
               <i className="ri-mail-fill text-secondary"></i>{" "}
-              support@kindelo.com
+              {siteData?.ContactUs.email}
             </li>
           </ul>
         </div>
       </div>
-      <div className="w-full relative h-40 mb-10 flex items-end justify-evenly">
-       <img className="h-32 w-full absolute" src="/sinewave.svg" alt="" />
-       <div className=" ">Copyright by &copy; 2024 Madrocket</div>
+      <div className="w-full relative h-40 mb-10 flex flex-col md:flex-row items-center md:items-end justify-end md:justify-evenly">
+       <img className="md:h-32 h-10 top-0 w-full absolute" src="/sinewave.svg" alt="" />
+       <div className="">Copyright by &copy; 2024 Madrocket</div>
        <div className="flex gap-3">
-       <i className="text-secondary text-2xl ri-facebook-circle-fill"></i>
-       <i className="text-secondary text-2xl ri-twitter-fill"></i>
-       <i className="text-secondary text-2xl ri-youtube-fill"></i>
+       <a href={siteData?.ContactUs.facebook_link} target="_blanck"><i className="text-secondary text-2xl ri-facebook-circle-fill"></i></a>
+       <a href={siteData?.ContactUs.twitter_link} target="_blanck"><i className="text-secondary text-2xl ri-twitter-fill"></i></a>
+       <a href={siteData?.ContactUs.linkedin_link} target="_blanck"><i className="text-secondary text-2xl ri-linkedin-box-fill"></i></a>
        </div>
        <div>Design with ❤️ by Shivam Singh Yadav</div>
       </div>

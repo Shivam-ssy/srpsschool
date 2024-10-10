@@ -18,6 +18,7 @@ import TeacherDetails from './Pages/TeacherDetails.jsx'
 import News from './Pages/News.jsx'
 import Classes from './Pages/Classes.jsx'
 import ProgramDetials from './Pages/ProgramDetials.jsx'
+import ShowContextProvider from './context/ContextProvider.jsx'
 const router=createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App/>}>
@@ -41,7 +42,7 @@ const router=createBrowserRouter(
 )
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  <ShowContextProvider>
     <RouterProvider router={router}/>
-  </StrictMode>,
+  </ShowContextProvider>
 )

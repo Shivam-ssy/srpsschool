@@ -1,7 +1,12 @@
+import { useContext } from "react";
 import AboutCard from "../Component/AboutCard";
 import Header from "../Component/Header";
+import ShowContext from "../context/ShowContext";
 
 function About() {
+  const {siteData}=useContext(ShowContext);
+  console.log("at about",siteData);
+  
   return (
     <main>
       <Header title="About" page="About" />
@@ -48,12 +53,10 @@ function About() {
       </div>
       {/* core value */}
 
-      <div className="w-full flex flex-col items-center justify-center text-white bg-secondary py-32">
+      <div className="w-full flex flex-col px-5 items-center justify-center text-white bg-secondary py-32">
         <h3 className="font-bold text-3xl">Our Core Value</h3>
-        <span className="text-center max-w-xl ">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae
-          consectetur eos nemo esse laborum rem nobis placeat delectus vel.
-          Nulla nesciunt, cupiditate
+        <span className="md:text-center text-justify max-w-2xl ">
+         {siteData?.AboutUs.mission}
         </span>
         <div className="flex flex-wrap justify-center gap-5 md:gap-0 mt-10">
           <AboutCard

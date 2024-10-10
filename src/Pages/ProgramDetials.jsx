@@ -92,8 +92,8 @@ function ProgramDetials() {
             <table className="table-auto border-separate border-spacing-1 rounded-3xl overflow-hidden w-full">
               <thead>
                 <tr className=" text-white">
-                  <th className="min-w-[150px] bg-primary px-4 py-2">Hours</th>
-                  <th className="min-w-[200px] bg-primary px-4 py-2">Activity</th>
+                  <th className="min-w-40 bg-primary px-4 py-2">Hours</th>
+                  <th className="min-w-40 bg-primary px-4 py-2">Activity</th>
                 </tr>
               </thead>
               <tbody>
@@ -122,8 +122,8 @@ function ProgramDetials() {
             <table className="table-auto border-separate border-spacing-1 rounded-3xl overflow-hidden w-full">
               <thead>
                 <tr className=" text-white">
-                  <th className="min-w-[150px] bg-primary px-4 py-2">Hours</th>
-                  <th className="min-w-[200px] bg-primary px-4 py-2">Activity</th>
+                  <th className="min-w-40 bg-primary px-4 py-2">Hours</th>
+                  <th className="min-w-40 bg-primary px-4 py-2">Activity</th>
                 </tr>
               </thead>
               <tbody>
