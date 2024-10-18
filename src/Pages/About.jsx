@@ -2,6 +2,7 @@ import { useContext } from "react";
 import AboutCard from "../Component/AboutCard";
 import Header from "../Component/Header";
 import ShowContext from "../context/ShowContext";
+import {Link} from "react-router-dom"
 
 function About() {
   const {siteData}=useContext(ShowContext);
@@ -13,18 +14,24 @@ function About() {
       <div className="flex flex-col md:flex-row px-5 md:px-0 mb-10 md:mb-0  md:justify-evenly">
         <img src="./aboutbest.png" alt="" />
         <div className="max-w-xl">
-          <h2 className="font-bold text-4xl mb-5">Best For Your Kids</h2>
+          <h2 className="font-bold text-4xl mb-5">
+            {/* Best For Your Kids */}
+            {siteData?.AboutUs.focus}
+            </h2>
           <h4 className="font-bold  mb-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+            {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
             omnis repellat ducimus in explicabo accusantium delectus eius,
-            possimus.
+            possimus. */}
+            Principal Message <br />
+            {siteData?.AboutUs.principal_message.principal_message}
           </h4>
           <span>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+            {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
             omnis repellat ducimus in explicabo accusantium delectus eius,
             possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Culpa incidunt neque quis ab quo dolor exercitationem accusamus,
-            voluptatibus sequi itaque quibusdam voluptas rerum.
+            voluptatibus sequi itaque quibusdam voluptas rerum. */}
+            {siteData?.AboutUs.vision}
           </span>
           <ul className=" list-none my-5">
             <li>
@@ -37,9 +44,9 @@ function About() {
             </li>
           </ul>
           <div className="flex gap-10">
-            <div className="px-5 py-3 w-fit bg-primary rounded-3xl">
+            <Link to="/contact" className="px-5 py-3 w-fit bg-primary rounded-3xl">
               Contact Us
-            </div>
+            </Link>
             <div className="flex items-center gap-2">
               <img
                 className="h-10 bg-primary/30 rounded-full p-2"

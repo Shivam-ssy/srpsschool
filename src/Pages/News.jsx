@@ -1,75 +1,96 @@
-import  { useState, useEffect } from 'react';
-import { newsdetails } from '../Data/NewsData';
+import { useState, useContext } from "react";
+import ShowContext from "../context/ShowContext";
+import NewsCard from "../Component/NewsCard";
+import Header from "../Component/Header"
 function News() {
-  const [newsData, setNewsData] = useState(newsdetails); 
-  const [searchTerm, setSearchTerm] = useState(''); 
-  const [filteredNews, setFilteredNews] = useState(newsdetails); 
-  const [category, setCategory] = useState('All');
-  const [currentPage, setCurrentPage] = useState(1); 
-  const newsPerPage = 5; 
- 
+  const { siteData } = useContext(ShowContext);
+  const data = siteData?.NewsEvents || { news: [], announcement: [] };
+  // console.log("data at news:", data);
 
-  useEffect(() => {
-    const filter = newsData.filter(news => 
-      (news.title.toLowerCase().includes(searchTerm.toLowerCase())) &&
-      (category === 'All' || news.category === category)
-    );
-    setFilteredNews(filter);
-    setCurrentPage(1); 
-  }, [searchTerm, category, newsData]);
+  const [searchQuery, setSearchQuery] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("all"); 
 
-  const indexOfLastNews = currentPage * newsPerPage;
-  const indexOfFirstNews = indexOfLastNews - newsPerPage;
-  const currentNews = filteredNews.slice(indexOfFirstNews, indexOfLastNews);
+  const filteredAnnouncements = data.announcement.filter((announcement) =>
+    announcement.title.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
-  // Change page
-  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+  const filteredNews = data.news.filter((news) =>
+    news.title.toLowerCase().includes(searchQuery.toLowerCase())
+  );
 
-  const pageNumbers = [];
-  for (let i = 1; i <= Math.ceil(filteredNews.length / newsPerPage); i++) {
-    pageNumbers.push(i);
-  }
+  // Render announcements based on search and category
+  const renderAnnouncements = () => (
+    <div>
+      <h2 className="font-bold text-xl">Announcements</h2>
+      <div className="flex flex-wrap justify-center gap-10 p-10">
 
-  return (
-    <div className='w-full mt-10'>
-      <input 
-        type="text" 
-        placeholder="Search news..." 
-        value={searchTerm} 
-        onChange={(e) => setSearchTerm(e.target.value)} 
-      />
-
-      <select value={category} onChange={(e) => setCategory(e.target.value)}>
-        <option value="All">All</option>
-        <option value="Sports">Sports</option>
-        <option value="Technology">Technology</option>
-        <option value="Entertainment">Entertainment</option>
-      </select>
-
-      {/* <div>
-        {currentNews.map(news => (
-          <div key={news.id} className="news-card">
-            <h2>{news.title}</h2>
-            <p>{news.summary}</p>
-            <span>{news.category}</span>
-          </div>
-        ))}
-      </div> */}
-
-      {/* Pagination */}
-      <div className="pagination">
-        {pageNumbers.map(number => (
-          <button 
-            key={number} 
-            onClick={() => paginate(number)}
-            className={currentPage === number ? 'active' : ''}
-          >
-            {number}
-          </button>
-        ))}
+      {filteredAnnouncements.length ? (
+        filteredAnnouncements.map((announcement, index) => (
+          <NewsCard key={index} title={announcement.title} image={announcement.url} dates={announcement.date}/>
+        ))
+      ) : (
+        <p>No announcements found.</p>
+      )}
       </div>
     </div>
   );
-};
+
+  // Render news based on search and category
+  const renderNews = () => (
+    <div>
+      <h2 className="font-bold text-xl">News</h2>
+      <div className="flex flex-wrap justify-center gap-5 p-10">
+
+      {filteredNews.length ? (
+        filteredNews.map((news, index) => (
+          <NewsCard key={index} title={news.title} image={news.image} dates={news.date}/>
+
+        ))
+      ) : (
+        <p>No news found.</p>
+      )}
+      </div>
+    </div>
+  );
+
+  return (
+    <main className="w-full ">
+    <Header title="Our News" page="News"/>
+    <div className="w-full justify-center flex">
+
+    <div className=" w-full px-5 md:px-0 md:w-3/4">
+    {/* for news header */}
+    <div className="flex justify-between flex-wrap gap-5 md:gap-0 mb-10">
+    <div>
+      <h5 className="font-bold text-xl">Search by Keyword</h5>
+      <input
+        type="text"
+        placeholder="Search announcements or news..."
+        value={searchQuery}
+        onChange={(e) => setSearchQuery(e.target.value)}
+        className="w-80 border-gray-700 border px-5 py-3 rounded-xl"
+      />
+    </div>
+
+      {/* Category selector */}
+      <div>
+        <h5 className="font-bold text-xl"> By Catogries</h5>
+      <div className="flex gap-10">
+        <button onClick={() => setSelectedCategory("all")}>All</button>
+        <button onClick={() => setSelectedCategory("announcement")}>Announcements</button>
+        <button onClick={() => setSelectedCategory("news")}>News</button>
+      </div>
+      </div>
+      {/* Conditionally render announcements or news based on category */}
+    </div>
+      {(selectedCategory === "all" || selectedCategory === "announcement") && renderAnnouncements()}
+      {(selectedCategory === "all" || selectedCategory === "news") && renderNews()}
+    </div>
+    </div>
+
+
+    </main>
+  );
+}
 
 export default News;

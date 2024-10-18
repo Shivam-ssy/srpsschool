@@ -1,16 +1,13 @@
 import { db } from "./config";
-import {  getDocs,collection} from 'firebase/firestore';
+import {  getDoc,doc} from 'firebase/firestore';
 
 const getSiteData= async()=>{
     try {
-        
-        const listRef=collection(db,"sites");
-        const snapshot=await getDocs(listRef);
-        const listData=snapshot.docs.map((doc)=>({
-            id:doc.id,
-            ...doc.data()
-        }))
-        // console.log(listData);
+        const id="www.kindedo.in"
+        const listRef=doc(db,"sites",id);
+        const snapshot=await getDoc(listRef);
+        const listData=snapshot.data()
+        console.log(listData);
         return listData;        
     } catch (error) {
         console.log("error at firebase",error);

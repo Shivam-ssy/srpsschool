@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import ShowContext from "../context/ShowContext";
-
+import {Link} from "react-router-dom"
 function Footer() {
   const {siteData}=useContext(ShowContext);
   return (
@@ -35,11 +35,13 @@ function Footer() {
         <div className="mt-10 md:mt-0">
           <h3 className="font-bold text-2xl mb-5">Quick Links</h3>
           <ul>
-            <li>About</li>
-            <li>Cources</li>
-            <li>Pages</li>
-            <li>Blog</li>
-            <li>Contact</li>
+            <Link to="/about"><li>About</li></Link>
+            <Link to="/classes"><li>Classes</li></Link>
+            <Link to="/pages/faqs"><li>Pages</li></Link>
+            <Link to="/contact"><li>Contact</li></Link>
+            <li><a href={siteData?.Academics.academic_calendar}>Academics Calender</a></li>
+            <li><a href={siteData?.Academics.exam_schedule}>Exam Schedule</a></li>
+            <li><a href={siteData?.Admissions.feeStructure}>Fee Structure</a></li>
           </ul>
         </div>
 
@@ -79,7 +81,7 @@ function Footer() {
        <a href={siteData?.ContactUs.twitter_link} target="_blanck"><i className="text-secondary text-2xl ri-twitter-fill"></i></a>
        <a href={siteData?.ContactUs.linkedin_link} target="_blanck"><i className="text-secondary text-2xl ri-linkedin-box-fill"></i></a>
        </div>
-       <div>Design with ❤️ by Shivam Singh Yadav</div>
+       <div>Design with ❤️ by <a className="text-blue-700" target="blanck" href="https://www.linkedin.com/in/shivam-singh-yadav-743657240/">Shivam Singh Yadav</a></div>
       </div>
     </main>
   );

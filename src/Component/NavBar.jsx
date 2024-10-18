@@ -65,7 +65,7 @@ function NavBar() {
                 to="/"
                 className={({ isActive }) => (isActive ? `text-primary` : `hover:text-primary`)}
               >
-                <li className="cursor-pointer">Home</li>
+                <li className="cursor-pointer ">Home</li>
               </NavLink>
               <NavLink
                 to="/about"

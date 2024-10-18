@@ -7,7 +7,7 @@ const ShowContextProvider = ({children}) => {
   useEffect(()=>{
     const fetchdata=async()=>{
       const data= await getSiteData()
-      setSiteData(data[0].siteData)
+      setSiteData(data.siteData)
     }
     fetchdata()
   },[])

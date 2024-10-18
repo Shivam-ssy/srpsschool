@@ -18,11 +18,11 @@ function Contact() {
                 <div className='flex flex-col md:flex-row w-full gap-5'>
                     <div className='flex flex-col w-full md:w-52'>
                         <label htmlFor="name">Name</label>
-                        <input className='outline-none border h-10 rounded-xl border-gray-600' type="text" name="name" id="name" />
+                        <input className='outline-none border h-10 rounded-xl px-3 border-gray-600' type="text" placeholder='Enter Your Name' name="name" id="name" />
                     </div>
                     <div className='flex flex-col w-full md:w-52'>
                         <label htmlFor="email">Email</label>
-                        <input className='outline-none border h-10 rounded-xl border-gray-600' type="email" name="email" id="email" />
+                        <input className='outline-none border h-10 rounded-xl border-gray-600 px-3' placeholder='Enter Your Email' type="email" name="email" id="email" />
                     </div>
                 </div>
                 <div className='flex flex-col md:flex-row w-full gap-5'>
