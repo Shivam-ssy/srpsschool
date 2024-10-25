@@ -35,14 +35,14 @@ function NavBar() {
         <div className="w-full hidden h-5 md:flex justify-between px-10">
           <div className="flex gap-5">
             <div className="flex gap-1">
-              <i className="ri-time-fill text-primary"></i> {siteData?.ContactUs.opening_hours}
+              <i className="ri-time-fill text-primary"></i> {siteData?.contactUs.openingHours}
             </div>
             <div className="flex gap-1">
-              <i className="ri-mail-fill text-primary"></i> {siteData?.ContactUs.email}
+              <i className="ri-mail-fill text-primary"></i> {siteData?.contactUs.email}
             </div>
           </div>
           <div className="flex gap-1 ">
-            <i className="ri-map-pin-2-fill text-primary"></i> {siteData?.ContactUs.location}
+            <i className="ri-map-pin-2-fill text-primary"></i> {siteData?.contactUs.location}
           </div>
         </div>
         <nav className="flex justify-between items-center md:justify-around mt-5">
@@ -150,7 +150,7 @@ function NavBar() {
           </div>
           <div className="md:flex hidden gap-5 items-center">
             <div className="flex items-center gap-2">
-              <i className="ri-phone-line text-2xl "></i> {siteData?.ContactUs.phone_number}
+              <i className="ri-phone-line text-2xl "></i> {siteData?.contactUs.phoneNumber}
             </div>
             <div className="px-5 py-3 bg-primary rounded-3xl">Apply Now</div>
             <div>

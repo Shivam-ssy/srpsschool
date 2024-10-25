@@ -7,9 +7,9 @@ function Contact() {
   return (
     <main>
       <div className='flex gap-5 flex-col md:flex-row px-5 md:px-0 w-full justify-center'>
-        <AboutCard title={siteData?.ContactUs.phone_number} details='Phone'img='./phone-line.svg' style='bg-secondary' />
-        <AboutCard title={siteData?.ContactUs.location} details='location' img='./map-pin-line.svg' style='bg-secondary' />
-        <AboutCard title={siteData?.ContactUs.email} details='Email' img='./mail-line.svg' style='bg-secondary' />
+        <AboutCard title={siteData?.contactUs.phoneNumber} details='Phone'img='./phone-line.svg' style='bg-secondary' />
+        <AboutCard title={siteData?.contactUs.location} details='location' img='./map-pin-line.svg' style='bg-secondary' />
+        <AboutCard title={siteData?.contactUs.email} details='Email' img='./mail-line.svg' style='bg-secondary' />
       </div>
       <div className='w-full  flex flex-wrap gap-5 md:gap-0 justify-evenly items-center'>
         <div className=' md:w-auto w-80'>

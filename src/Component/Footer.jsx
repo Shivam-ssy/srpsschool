@@ -26,7 +26,7 @@ function Footer() {
             </div>
           </div>
           <span className="w-full md:px-0 md:max-w-96">
-          {siteData?.AboutUs.vision}
+          {siteData?.aboutUs.vision}
           </span>
           <div className="w-fit px-5 py-2 rounded-3xl cursor-pointer mt-10 bg-primary">
             Join Now
@@ -39,9 +39,9 @@ function Footer() {
             <Link to="/classes"><li>Classes</li></Link>
             <Link to="/pages/faqs"><li>Pages</li></Link>
             <Link to="/contact"><li>Contact</li></Link>
-            <li><a href={siteData?.Academics.academic_calendar}>Academics Calender</a></li>
-            <li><a href={siteData?.Academics.exam_schedule}>Exam Schedule</a></li>
-            <li><a href={siteData?.Admissions.feeStructure}>Fee Structure</a></li>
+            <li><a href={siteData?.academics.academicCalendar}>Academics Calender</a></li>
+            <li><a href={siteData?.academics.examSchedule}>Exam Schedule</a></li>
+            <li><a href={siteData?.admissions.feeStructure}>Fee Structure</a></li>
           </ul>
         </div>
 
@@ -61,14 +61,14 @@ function Footer() {
           <h3 className="font-bold text-2xl mb-5 mt-10 md:mt-0">Contact Us</h3>
           <ul>
             <li>
-              <i className="ri-map-pin-2-fill text-secondary"></i> {siteData?.ContactUs.location}
+              <i className="ri-map-pin-2-fill text-secondary"></i> {siteData?.contactUs.location}
             </li>
             <li>
-              <i className="ri-phone-line  text-secondary"></i> {siteData?.ContactUs.phone_number}
+              <i className="ri-phone-line  text-secondary"></i> {siteData?.contactUs.phoneNumber}
             </li>
             <li>
               <i className="ri-mail-fill text-secondary"></i>{" "}
-              {siteData?.ContactUs.email}
+              {siteData?.contactUs.email}
             </li>
           </ul>
         </div>
@@ -77,9 +77,9 @@ function Footer() {
        <img className="md:h-32 h-10 top-0 w-full absolute" src="/sinewave.svg" alt="" />
        <div className="">Copyright by &copy; 2024 Madrocket</div>
        <div className="flex gap-3">
-       <a href={siteData?.ContactUs.facebook_link} target="_blanck"><i className="text-secondary text-2xl ri-facebook-circle-fill"></i></a>
-       <a href={siteData?.ContactUs.twitter_link} target="_blanck"><i className="text-secondary text-2xl ri-twitter-fill"></i></a>
-       <a href={siteData?.ContactUs.linkedin_link} target="_blanck"><i className="text-secondary text-2xl ri-linkedin-box-fill"></i></a>
+       <a href={siteData?.contactUs.facebookLink} target="_blanck"><i className="text-secondary text-2xl ri-facebook-circle-fill"></i></a>
+       <a href={siteData?.contactUs.twitterLink} target="_blanck"><i className="text-secondary text-2xl ri-twitter-fill"></i></a>
+       <a href={siteData?.contactUs.linkedinLink} target="_blanck"><i className="text-secondary text-2xl ri-linkedin-box-fill"></i></a>
        </div>
        <div>Design with ❤️ by <a className="text-blue-700" target="blanck" href="https://www.linkedin.com/in/shivam-singh-yadav-743657240/">Shivam Singh Yadav</a></div>
       </div>

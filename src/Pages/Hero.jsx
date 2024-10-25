@@ -12,7 +12,7 @@ function Hero() {
         <h3 className='md:text-7xl text-6xl  font-bold'>Best Children's <br /> Education</h3>
         <div className='text-white bg-primary px-5 py-3 rounded-3xl w-fit mt-10'>Admission Open 2022-2023</div>
       </div>
-      <div><img className='md:h-[80vh]  w-full max-w-xl' src={siteData?.Home.hero.heroImage ||"./heroImg2.png" } alt="" /></div>
+      <div><img className='md:h-[80vh]  w-full max-w-xl' src={siteData?.home.hero.heroImage ||"./heroImg2.png" } alt="" /></div>
     </main>
   )
 }

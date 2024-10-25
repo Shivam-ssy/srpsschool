@@ -4,7 +4,7 @@ import NewsCard from "../Component/NewsCard";
 import Header from "../Component/Header"
 function News() {
   const { siteData } = useContext(ShowContext);
-  const data = siteData?.NewsEvents || { news: [], announcement: [] };
+  const data = siteData?.newsEvents || { news: [], announcement: [] };
   // console.log("data at news:", data);
 
   const [searchQuery, setSearchQuery] = useState("");

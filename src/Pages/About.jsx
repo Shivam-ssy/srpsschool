@@ -16,14 +16,14 @@ function About() {
         <div className="max-w-xl">
           <h2 className="font-bold text-4xl mb-5">
             {/* Best For Your Kids */}
-            {siteData?.AboutUs.focus}
+            {siteData?.aboutUs.focus}
             </h2>
           <h4 className="font-bold  mb-5">
             {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
             omnis repellat ducimus in explicabo accusantium delectus eius,
             possimus. */}
             Principal Message <br />
-            {siteData?.AboutUs.principal_message.principal_message}
+            {siteData?.aboutUs.principalMessage.principalMessage}
           </h4>
           <span>
             {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
@@ -31,7 +31,7 @@ function About() {
             possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Culpa incidunt neque quis ab quo dolor exercitationem accusamus,
             voluptatibus sequi itaque quibusdam voluptas rerum. */}
-            {siteData?.AboutUs.vision}
+            {siteData?.aboutUs.vision}
           </span>
           <ul className=" list-none my-5">
             <li>
@@ -63,7 +63,7 @@ function About() {
       <div className="w-full flex flex-col px-5 items-center justify-center text-white bg-secondary py-32">
         <h3 className="font-bold text-3xl">Our Core Value</h3>
         <span className="md:text-center text-justify max-w-2xl ">
-         {siteData?.AboutUs.mission}
+         {siteData?.aboutUs.mission}
         </span>
         <div className="flex flex-wrap justify-center gap-5 md:gap-0 mt-10">
           <AboutCard

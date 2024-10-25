@@ -39,13 +39,13 @@ function Offering() {
         <div className="md:max-w-[40vw] w-full mb-40">
           <h1 className="text-3xl font-bold">
             {/* Best for Your Kids */}
-            {siteData?.AboutUs.focus}
+            {siteData?.aboutUs.focus}
             </h1>
           <span className="">
             {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
             quidem dolorem necessitatibus praesentium id? Reprehenderit, soluta
             aut consequuntur ut autem adipisci dolores. Molestias? */}
-            {siteData?.AboutUs.vision}
+            {siteData?.aboutUs.vision}
           </span>
           <div className="text-white flex w-fit -ml-5 px-0 md:px-10 py-2 gap-2 md:gap-5 rounded-3xl mt-10 bg-secondary ">
             <div className="border flex md:gap-2 md:px-3 border-gray-600 border-l-0 border-t-0 border-b-0">
