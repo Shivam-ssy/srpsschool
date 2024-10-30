@@ -27,7 +27,7 @@ function Gallery() {
     <h3 className='font-bold text-xl mb-10'>Our Infrastructure</h3>
     <h5 className='font-bold text-lg my-5 ml-5'>Faculty</h5>
     <div className="grid grid-cols-1 px-5 sm:grid-cols-2 md:grid-cols-3 gap-5">
-      i
+      {
         siteData?.facultyStaff.facultyPicture?(
 
             <img className='w-80 h-60' src={siteData?.facultyStaff.facultyPicture} />

@@ -3,6 +3,7 @@ import ShowContext from "../context/ShowContext";
 import {Link} from "react-router-dom"
 function Footer() {
   const {siteData}=useContext(ShowContext);
+  console.log("data for courasel",siteData.home.carousel)
   return (
     <main className="w-full">
       <div className=" w-full mt-10 flex flex-wrap justify-evenly items-start px-10 md:px-32 py-20 bg-[#f7a138]/10">
