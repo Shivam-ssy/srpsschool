@@ -48,9 +48,9 @@ function NavBar() {
         <nav className="flex justify-between items-center md:justify-around mt-5">
           <div>
             <div className="flex items-center text-secondary gap-3 font-serif">
-              <img className="h-20" src="/logo.png" alt="" />
+              <img className="h-20 rounded-full w-20" src={siteData?.home.hero.schoolDetails.schoolLogo || "/logo.png"} alt="" />
               <div>
-                <h3 className="text-2xl font-bold">kindedo</h3>
+                <h3 className="text-2xl font-bold">{siteData?.home.hero.schoolDetails.schoolName}</h3>
                 <span>Best School</span>
               </div>
             </div>
@@ -74,13 +74,13 @@ function NavBar() {
                 <li className="cursor-pointer">About</li>
               </NavLink>
               <div className="relative group">
-                <Link to="/program">
+                <Link to="/blog">
                   <li
                     className={`cursor-pointer hover:text-primary ${
-                      location.pathname.includes("program") ? "text-primary" : ""
+                      location.pathname.includes("blog") ? "text-primary" : ""
                     }`}
                   >
-                    Programs
+                    Blog
                   </li>
                 </Link>
               </div>
@@ -129,6 +129,11 @@ function NavBar() {
                       Testimonials
                     </div>
                   </Link>
+                  <Link to="/pages/academics">
+                    <div className="w-full py-2 px-2 hover:bg-gray-900 hover:text-white break-keep">
+                      Academics
+                    </div>
+                  </Link>
                 </div>
               </div>
               <NavLink
@@ -152,7 +157,7 @@ function NavBar() {
             <div className="flex items-center gap-2">
               <i className="ri-phone-line text-2xl "></i> {siteData?.contactUs.phoneNumber}
             </div>
-            <div className="px-5 py-3 bg-primary rounded-3xl">Apply Now</div>
+            <Link to="/admission" className="px-5 py-3 bg-primary rounded-3xl">Apply Now</Link>
             <div>
               <i className="ri-dashboard-line text-secondary text-3xl"></i>
             </div>

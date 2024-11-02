@@ -4,7 +4,7 @@ import ShowContext from '../context/ShowContext'
 
 function Gallery() {
   const {siteData}=useContext(ShowContext)
-  console.log("data at gallery",siteData?.infrastructure.artRooms[0] );
+  console.log("data at gallery",siteData.gallery.images );
   
   return (
     <main>
@@ -12,15 +12,20 @@ function Gallery() {
     <div className='w-full flex flex-col'>
     <div className="w-full max-w-3xl mx-auto px-6">
       <h3 className='font-bold text-xl mb-10'>Highlights Gallery</h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-            <div><img className="h-full w-full rounded-3xl object-cover" src={ siteData?.gallery.images[0].url ||"/notfound.png"} alt="Gallery Image 1" /></div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+            {/* <div><img className="h-full w-full rounded-3xl object-cover" src={ siteData?.gallery.images[0].url ||"/notfound.png"} alt="Gallery Image 1" /></div>
             <div className="col-span-2 row-span-2"><img className="h-full w-full rounded-3xl object-cover" src={ siteData?.gallery.images[1].url ||"/notfound.png"} alt="Gallery Image 2" /></div>
             <div className="row-span-2"><img className="h-full w-full rounded-3xl object-cover" src={ siteData?.gallery.images[2].url ||"/notfound.png"} alt="Gallery Image 3" /></div>
             <div><img className="h-full w-full rounded-3xl object-cover" src="../g4.jpg" alt="Gallery Image 4" /></div>
             <div className="col-span-2 row-span-2"><img className="h-full w-full rounded-3xl object-cover" src="../g5.jpg" alt="Gallery Image 5" /></div>
             <div className="row-span-2"><img className="h-full w-full rounded-3xl object-cover" src="../g6.jpg" alt="Gallery Image 6" /></div>
             <div><img className="h-full w-full rounded-3xl object-cover" src="../g7.jpg" alt="Gallery Image 7" /></div>
-            <div><img className="h-full w-full rounded-3xl object-cover" src="../g8.jpg" alt="Gallery Image 8" /></div>
+            <div><img className="h-full w-full rounded-3xl object-cover" src="../g8.jpg" alt="Gallery Image 8" /></div> */}
+            {
+              siteData?.gallery?.images.map((image,index)=>(
+                <img className='min-h-80 aspect-ratio' key={index} src={image.url}/>
+              ))
+            }
         </div>
     </div>
     <div  className="w-full max-w-3xl mx-auto px-6 my-10">

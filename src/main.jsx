@@ -19,21 +19,25 @@ import News from './Pages/News.jsx'
 import Classes from './Pages/Classes.jsx'
 import ProgramDetials from './Pages/ProgramDetials.jsx'
 import ShowContextProvider from './context/ContextProvider.jsx'
+import Academics from './Pages/Academics.jsx'
+import Admission from './Pages/Admission.jsx'
 const router=createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App/>}>
       <Route index path='/' element={<Home/>}/>
       <Route  path='/about' element={<About/>}/>
-      <Route  path='/program' element={<Program/>}/>
-      <Route  path='/program/:id' element={<ProgramDetials/>}/>
+      <Route  path='/blog' element={<Program/>}/>
+      <Route  path='/blog/:id' element={<ProgramDetials/>}/>
       <Route  path='/pages/teacher' element={<Teachers/>}/>
       <Route  path='/pages/faqs' element={<Faqs/>}/>
       <Route  path='/pages/gallery' element={<Gallery/>}/>
       <Route  path='/pages/timetable' element={<TimeTable/>}/>
       <Route  path='/pages/testimonials' element={<Testimonials/>}/>
       <Route  path='/pages/teachersdetails' element={<TeacherDetails/>}/>
+      <Route  path='/pages/academics' element={<Academics/>}/>
       <Route  path='/contact' element={<Contact/>}/>
       <Route  path='/classes' element={<Classes/>}/>
+      <Route  path='/admission' element={<Admission/>}/>
       <Route  path='/news' element={<News/>}/>
       <Route  path='*' element={<NotFound/>}/>
       

@@ -20,9 +20,9 @@ function Footer() {
       </div> */}
         <div className="md:w-96  w-full  md:px-0">
           <div className="flex items-center mb-5  text-secondary gap-3 font-serif">
-            <img className="h-20" src="./logo.png" alt="" />
+            <img className="h-20 rounded-full w-20" src={siteData?.home.hero.schoolDetails.schoolLogo || "/logo.png"} alt="" />
             <div>
-              <h3 className="text-2xl font-bold ">kindedo</h3>
+              <h3 className="text-2xl font-bold ">{siteData?.home.hero.schoolDetails.schoolName}</h3>
               <span>Best School</span>
             </div>
           </div>

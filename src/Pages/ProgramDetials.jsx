@@ -8,7 +8,7 @@ function ProgramDetials() {
   // })
   return (
     <main className="w-full mt-10 md:mt-0" >
-      <Header page="Program Details" title="Program Details" />
+      <Header page="Blog Details" title="Blog Details" />
       <div className="flex flex-col items-center">
         <div className="grid w-3/4 gap-5 grid-cols-1 md:grid-cols-2">
           <div className="w-full">
@@ -31,7 +31,7 @@ function ProgramDetials() {
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui
               porro sint iure exercitationem ullam maxime labore dol
             </span>
-            <div className="flex mt-10 flex-wrap gap-5 md:gap-0">
+            {/* <div className="flex mt-10 flex-wrap gap-5 md:gap-0">
               <div className="flex items-center gap-2 border-r border-primary w-fit pr-3">
                 <img className="w-16 h-16 rounded-full" src="/p3.jpg" alt="" />
                 <div className="">
@@ -47,10 +47,10 @@ function ProgramDetials() {
                 <div>Per/Month</div>
                 <div className="font-bold">$190</div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
-        <div className="flex gap-5 md:flex-row flex-col mt-10">
+        {/* <div className="flex gap-5 md:flex-row flex-col mt-10">
           <AboutCard
             title="2-2.5 years"
             img="/book-shelf-line.svg"
@@ -79,8 +79,8 @@ function ProgramDetials() {
             className="bg-primary/10 min-w-60"
             style="bg-secondary"
           />
-        </div>
-        <div className="mt-10 px-10">
+        </div> */}
+        {/* <div className="mt-10 px-10">
           <h3 className="font-bold text-3xl text-center">
             Full Days With Learning
           </h3>
@@ -150,8 +150,8 @@ function ProgramDetials() {
               </tbody>
             </table>
           </div>
-        </div>
-        <div className="grid w-3/4 mt-10 gap-5 grid-cols-1 md:grid-cols-2">
+        </div> */}
+        <div className="grid w-3/4  mt-10 gap-5 grid-cols-1 md:grid-cols-2">
           <div className="w-full">
             <img
               className="min-h-80 h-full w-full rounded-3xl"
@@ -159,7 +159,7 @@ function ProgramDetials() {
               alt=""
             />
           </div>
-          <div className="bg-primary/10  p-10 rounded-3xl">
+          <div className="bg-primary/10 row-start-1  p-10 rounded-3xl">
             <h3 className="font-bold text-3xl">More Information </h3>
             <span>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
