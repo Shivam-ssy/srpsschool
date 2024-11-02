@@ -6,7 +6,7 @@ function Teachers() {
   return (
     <main className='w-full '>
         <Header title="Teachers" page="Teachers"/> 
-        <div className='w-full flex justify-center'>
+        <div className='w-full flex md:mt-0 mt-10 justify-center'>
         <div className='max-w-6xl flex justify-center gap-5  flex-wrap'>
           <TeachersCards teacherImg='../p1.jpg' name='Cristina r. Hick'/>
           <TeachersCards teacherImg='../p3.jpg' name='Aleena Jyrall'/>

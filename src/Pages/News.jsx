@@ -56,7 +56,7 @@ function News() {
   return (
     <main className="w-full ">
     <Header title="Our News" page="News"/>
-    <div className="w-full justify-center flex">
+    <div className="w-full md:mt-0 mt-10 justify-center flex">
 
     <div className=" w-full px-5 md:px-0 md:w-3/4">
     {/* for news header */}
@@ -68,14 +68,14 @@ function News() {
         placeholder="Search announcements or news..."
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
-        className="w-80 border-gray-700 border px-5 py-3 rounded-xl"
+        className="md:w-80 w-full border-gray-700 border px-5 py-3 rounded-xl"
       />
     </div>
 
       {/* Category selector */}
       <div>
         <h5 className="font-bold text-xl"> By Catogries</h5>
-      <div className="flex gap-10">
+      <div className="flex gap-5 md:gap-10">
         <button onClick={() => setSelectedCategory("all")}>All</button>
         <button onClick={() => setSelectedCategory("announcement")}>Announcements</button>
         <button onClick={() => setSelectedCategory("news")}>News</button>

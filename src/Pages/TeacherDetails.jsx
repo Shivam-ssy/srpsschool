@@ -36,7 +36,7 @@ function TeacherDetails() {
             </div>
 
           </div>
-          <div className="bg-primary/10 rounded-3xl py-10 px-5">
+          <div className="bg-primary/10 overflow-auto break-keep rounded-3xl py-10 px-5">
             <h3 className="font-bold text-xl">
             Pearsonal Info:
             </h3>
